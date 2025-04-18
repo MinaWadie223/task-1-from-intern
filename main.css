@@ -1,0 +1,521 @@
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* style for most of the btn  */
+.btn{
+    padding: 7px 24px;
+    border: none;
+    border-radius: 18px;
+    font-size: 0.8em;
+    cursor: pointer;
+    font-weight: normal;
+}
+/* styl for flex  */
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+} 
+/* for sctions need container  */
+.contant{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-evenly;
+    height: 100%;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'work sans',sans-serif;
+}
+nav{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vb;
+    background-color: #0B9586;
+}
+nav .img{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding-left: 5%;
+}
+nav .img img{
+    width: 60%;
+    position: relative;
+    height: 45%;
+    margin-left: 10%;
+    min-width: 50px;
+}
+nav .img img::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100% ;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+nav .link{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items:center ;
+}
+nav .link ul{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:center ;
+    width: 100%;
+    height: 100%;
+    padding-left: 4%;
+}
+nav .link ul li{
+    width: 100px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .link ul li a{
+    color: white;
+    right: 50%;
+}
+nav .link ul li:hover{
+    box-shadow: 5px rgba(0, 0, 0, 0.2);
+    border-bottom:2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8%;
+}
+nav .nav-toggle{
+    display: none;
+    width: 50px;
+    height: 45px;
+    align-self: center;
+    margin-right: 43px;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+nav .nav-toggle span{
+    width: 100%;
+    height: 8px;
+    background-color: #101828;
+}
+nav .nav-toggle:hover nav.link{
+    display: flex;
+    }
+@media (max-width: 840px) {
+    nav .link{
+        display: none;
+    }
+    nav .nav-toggle{
+    display: flex;
+    }
+    
+    
+}
+nav .text{
+    width: 30%;
+    max-height: 100%;
+    align-items: center;
+}
+nav .text h1{
+max-height: 100%;
+font-size: 1em;
+align-self: flex-end;
+margin-right: 30%;
+padding-top: 3%;
+color: white;
+}
+nav .text p{
+max-height: 100%;
+font-size: 0.8em;
+align-self: flex-end;
+padding: 0%;
+margin-right: 30%;
+color: white;
+}
+/* end nav  */
+/* start home */
+section.home {
+    display: flex;
+    width: 100%;
+    height: 650px;
+    background-image: url(project-imgies/solar-panels-meadow\ 1.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+section.home .contant .progress{
+    max-width: 70%;
+}
+section.home .contant .progress-line{
+    width: 30%;
+    height: 1px;
+    background-color: #212221;
+    border-radius: 10px;
+    align-self: center;
+    position: relative;
+    margin: 0 10%;
+}
+section.home .contant .progress-line::before{
+    content: '';
+    position: absolute;
+    width: 55%;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+section.home .contant .progress .span{
+    font-size: 80%;
+    color: white;
+}
+section .contant .text{
+    max-width: 80%;
+    color: white;
+    font-size: 2em;
+}
+section .contant .text-2{
+    max-width: 70%;
+    color: white;
+
+}
+.btn-call{
+    background-color: #3CAB90;
+    color: white;
+    margin-right: 3%;
+    max-width: 10em;
+}
+.btn-recuset{
+    background-color: #FFBB1C;
+    color: white;
+    margin-left: 3%;
+}
+/* end home */
+.home-continue{
+    display: flex;
+    justify-content: center;
+    min-height: 712px;
+}
+
+.home-continue .contant-s{
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    min-height: 712px;
+    width: 90%;
+}
+.home-continue .contant .left{
+    width: 40%;
+    min-width: 50vb;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
+.home-continue .contant .left p.first{
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50.83px;
+    
+}
+.home-continue .contant .left p.secound{
+    font-weight: 400;
+    font-size: 16px;
+    color: #475467;
+}
+.home-continue .contant .left div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-continue .contant .left div span{
+font-weight: 700;
+size: 20px;
+color: #84bd3a;
+}
+.home-continue .contant .left div p{
+    font-weight: 600;
+    font-size: 20px;
+    color: #101828;
+}
+.home-continue .contant .right{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 518.52px;
+    max-height: 552px;
+    align-self:center;
+    position: relative;
+}
+.home-continue .contant .right img{
+    max-width: 500px;
+    max-height: 552px;
+    border-radius: 12px;
+    align-self: flex-end;
+}
+.home-continue .contant .right .icon{
+    justify-content: space-evenly;
+    width: 266px;
+    height: 208px;
+    border-radius: 12px;
+    background-color: #FFBB1C;
+    position: absolute;
+    left: -42px;
+    bottom: 9px;
+}
+.home-continue .contant .right .icon svg{
+    width: 90px;
+    height: 90px;
+    margin-left: 30px;
+}
+.home-continue .contant .right .icon p{
+    margin-left: 30px;
+}
+
+section.power{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 505px;
+    background-image: url(project-imgies/8116\ 1.png);
+    background-size: cover;
+}
+section.power .power-btn{
+    background-color: #FFBB1C;
+}
+/* start solar section  */
+section.solar{
+    min-height: 777px;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    justify-content: space-between;
+    align-items:center ;
+    height: 123px;
+    width: 90%;
+    align-self: center;
+    margin-top: 10%;
+}
+.header h1{
+    font-weight: 600;
+    font-size: 42px;
+    letter-spacing: -2%;
+    color: #101828;
+}
+.header p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #475467;
+}
+section.solar div.footer{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+}
+@media (max-width: 1120px) {
+    section.solar div.footer {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 800px) {
+    section.solar div.footer {
+    grid-template-columns: 1fr; 
+    }
+}
+section.solar div.footer .card{
+    justify-content: space-around;
+    width: 358.67px;
+    height: 454px;
+    background-color: #ffffff;
+}
+section.solar div.footer .card h1{
+    font-weight: 600;
+    font-size: 20px;
+    color: #101828;
+}
+section.solar div.footer .card p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #475467;
+}
+section.solar div.footer .card a{
+    font-weight: 600;
+    font-size: 16px;
+    color: #3cab90;
+}
+/* end solar section  */
+section.repair{
+    min-height: 505px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(project-imgies/8116\ 1\ \(1\).png);
+    background-size: cover;
+}
+section.repair .text{
+    width: 80%;
+    min-height: 311px;
+    max-width: 858px;
+    height: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.57);
+    border-radius: 12px;
+}
+section.repair .text h1{
+    color: #ffffff;
+    padding-top: 5%;
+}
+section.repair .text p{
+    color: #ffffff;
+    padding: 5%;
+}
+/* start energy  */
+section.energy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.energy .contant{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    width: 80%;
+    margin-top: 80px
+}
+.card-1{
+    width: 358px;
+    height: 418px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    border: solid 1px ;
+    border-color: #3cab90;
+}
+.card-1 img{
+    width: 310px;
+    height: 106px;
+    border-radius: 10px;
+    align-self: center;
+}
+.card-1 h3{
+    width: 90%;
+    align-self: center;
+}
+.card-1 p{
+    width: 90%;
+    align-self: center;
+}
+.card-1 a{
+    width: 90%;
+    align-self: center;
+}
+.ca-spacial{
+    width: 358.67px;
+    height: 364px;
+}
+/* end energy  */
+.val-contant{
+    width: 100%;
+    align-items: center;
+    margin-top: 10%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-around;
+}
+section.custmer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 603px;
+}
+section.custmer .cus-contant{
+    flex-direction: row;
+    min-height: 90vb;
+}
+section.custmer .cus-text{
+    width: 30%;
+    min-width:400px;
+    justify-content: space-between;
+    height: 296px;
+}
+section.custmer .cus-text h3{
+    font-weight: 700;
+    font-size: 48px;
+    color: #1c1c1c; 
+}
+section.custmer .cus-text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #1c1c1c;
+}
+.cus-card{
+    justify-content:space-evenly;
+    border-radius: 24px;
+    min-width: 708px;
+}
+footer{
+    height: 412px;
+    display: flex;
+    justify-content: center;
+    background-color: #283646;
+}
+.subscribe-section {
+    text-align: start;
+    width: 408px;
+    height: 82px;
+}
+.subscribe-section p{
+color: white;
+}
+.subscribe-section .subscribe-container{
+    display: flex;
+    position: relative;
+    width: 408px;
+}
+.subscribe-section .subscribe-container button{
+    position: absolute;
+    right: 30%;
+}
+footer .footer-up {
+    justify-content: space-between;
+}
+footer .footer-up .left {
+    justify-content: space-between;
+    width: 60%;
+    max-width: 500px;
+}
+footer .footer-up .left img{
+    max-width: 185px; 
+    max-height: 64px;
+}
+footer .footer-up ul{
+    width: 100%;
+    justify-content: space-between;
+}
+footer .footer-up ul li a{
+    color: #ffffff;
+}
+footer .footer-down{
+    justify-content: space-between;
+}
+.subscribe-button{
+    background-color: #FFBB1C;
+}
+
+
